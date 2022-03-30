@@ -48,6 +48,7 @@ public class ProxyServer {
             System.out.println(url);
             String URL = (url == 0) ? getURL1() : getURL2();
             url = (url + 1) % 2;
+            System.out.println(URL);
             String value = req.queryParams("value");
             return service(Double.parseDouble(value), URL + "/sqrt");
 
