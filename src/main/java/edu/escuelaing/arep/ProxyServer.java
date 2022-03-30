@@ -94,14 +94,14 @@ public class ProxyServer {
         if(System.getenv("URL1")!= null){
             return System.getenv("URL1");
         }
-        return "http://localhost:4567";
+        return "http://ec2-52-91-230-74.compute-1.amazonaws.com:4567/";
     }
 
     static String getURL2() {
         if (System.getenv("URL2") != null) {
             return System.getenv("URL2");
         }
-        return "http://localhost:4567";
+        return "http://ec2-44-201-149-216.compute-1.amazonaws.com:4567/";
     }
 
 }
