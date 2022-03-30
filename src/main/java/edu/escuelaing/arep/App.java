@@ -27,12 +27,14 @@ public class App {
         before((request, response) -> response.header("Access-Control-Allow-Origin", "*"));
 
         get("/cos", (req, res) -> {
+            System.out.println("Servicio");
             res.type("application/json");
             String value = req.queryParams("value");
             return mathServices.cos(Double.parseDouble(value));
         });
 
         get("/sqrt", (req, res) -> {
+            System.out.println("Servicio");
             res.type("application/json");
             String value = req.queryParams("value");
             return mathServices.sqrt(Double.parseDouble(value));
